@@ -1,5 +1,5 @@
 import express from "express";
 const app = express();
-app.use("/images", express.static("images"));
+app.use(express.static("."));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
